@@ -38,7 +38,7 @@ namespace InstrumentHiringSystem.Repositories
 
             if (includeProperties != null)
             {
-                foreach (var includeprop in includeProperties.Split(new char[] { ', ' }, StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeprop in includeProperties.Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeprop);
                 }
@@ -55,7 +55,7 @@ namespace InstrumentHiringSystem.Repositories
 
             if (includeProperties != null)
             {
-                foreach (var includeprop in includeProperties.Split(new char[] { ', ' }, StringSplitOptions.RemoveEmptyEntries))
+                foreach (var includeprop in includeProperties.Split(new string[] { ", " }, StringSplitOptions.RemoveEmptyEntries))
                 {
                     query = query.Include(includeprop);
                 }
